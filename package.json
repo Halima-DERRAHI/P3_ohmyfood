@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Halima-DERRAHI/P3_ohmyfood.git"
   },
-
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
 }
