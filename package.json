@@ -6,6 +6,11 @@
   "scripts": {
     "sass": "sass --watch ./SASS/main.scss:./CSS/main.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halima-DERRAHI/P3_ohmyfood.git"
+  },
+
   "author": "",
   "license": "ISC"
 }
