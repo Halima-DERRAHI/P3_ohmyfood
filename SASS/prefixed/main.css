@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+.header__logo {
+  font-family: Shrikhand, "cursive";
+  text-align: center;
+}
+
+.place {
+  background-color: rgb(243, 243, 243);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL21haW4uc2NzcyIsIi4uL21haW4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7RUFHSSxTQUFBO0VBQ0EsMkJBQUE7VUFBQSxtQkFBQTtBQ0NKOztBREVBO0VBQ0ksOEJBQUE7VUFBQSxzQkFBQTtBQ0NKOztBREVBO0VBQ0ksYUFBQTtFQUNBLGtEQUFBO1VBQUEsMENBQUE7RUFDQSxXQUFBO0FDQ0o7QURBUTtFQUNJLGlDQUFBO0VBQ0Esa0JBQUE7QUNFWjs7QURFQTtFQUNJLG9DQUFBO0FDQ0oiLCJmaWxlIjoibWFpbi5jc3MifQ== */
