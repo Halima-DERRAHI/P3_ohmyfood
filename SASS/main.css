@@ -2,7 +2,6 @@
 *::after,
 *::before {
   margin: 0;
-  padding: 0;
   box-sizing: inherit;
 }
 
@@ -10,8 +9,18 @@ body {
   box-sizing: border-box;
 }
 
-header {
+.header {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
+.header__logo {
+  font-family: Shrikhand, "cursive";
+  text-align: center;
+}
+
+.place {
+  background-color: rgb(243, 243, 243);
+}
+
+/*# sourceMappingURL=main.css.map */
