@@ -58,20 +58,95 @@ body {
 }
 
 .choice {
-  width: 90%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: auto;
-  padding: 2rem;
+  padding: 3rem 1.25rem;
 }
 .choice__list {
   background-color: #f7f7f7;
-  padding: 1.5rem;
-  margin: 1rem;
-  border-radius: 2rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  padding: 1.75rem;
+  margin: 0.75rem;
+  margin-right: 0.25rem;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
-.choice__list--text {
+.choice__list h4 {
+  font-weight: 500;
+  display: inline-block;
+}
+.choice__list .fa-solid {
+  color: #7e7e7e;
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.15rem;
+}
+.choice__list--number {
+  border-radius: 100%;
+  background-color: #9356DC;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
+  margin-left: -2.5rem;
+}
+.choice__list:hover {
+  background-color: #f2eafb;
+}
+.choice__list:hover .fa-solid {
+  color: #9356DC;
+}
+.choice__title {
   margin-bottom: 1rem;
+}
+
+.restaurant {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 3rem 1.25rem;
+}
+.restaurant h1 {
+  padding: 1.5rem 0;
+}
+.restaurant a {
+  text-decoration: none;
+}
+
+.card {
+  height: 15.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  position: relative;
+  margin-bottom: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
+}
+.card__img {
+  height: 11rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+.card__badge {
+  background-color: #99E2D0;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  color: #278870;
+}
+.card__title {
+  color: black;
+  padding: 0.5rem 1rem 0.25rem 1rem;
+}
+.card__subtitle {
+  color: black;
+  padding: 0 1rem;
+}
+
+footer {
+  background-color: #353535;
 }

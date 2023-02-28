@@ -29,7 +29,7 @@ body {
 }
 
 .explore {
-    background-color: $first-background-color;
+    background-color: $main-background-color;
     text-align: center;
     padding: 2rem 3rem 4rem 3rem;
         &__title {
@@ -43,20 +43,89 @@ body {
 }
 
 .choice {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    padding: 2rem;
+    @include bloc;
         &__list {
-            background-color: $first-background-color;
-            padding: 1.5rem;
-            margin: 1rem;
-            border-radius: 2rem;
-            @include box-shadow;
-                &--text {
-                    margin-bottom: 1rem;
+            background-color: $main-background-color;
+            padding: 1.75rem;
+            margin: 0.75rem;
+            margin-right: 0.25rem;
+            border-radius: 1rem;
+            @include card-box-shadow;
+            h4 {
+                font-weight: 500;
+                display: inline-block;
+            }
+            .fa-solid {
+                color: $icon-color;
+                display: inline-block;
+                margin: 0 1rem;
+                font-size: 1.15rem;
+            }
+            &--number {
+                border-radius: 100%;
+                background-color: $color-primary;
+                color: white;
+                padding:0.25rem 0.5rem;
+                font-size: 0.85rem;
+                margin-left: -2.50rem;
+            }
+            &:hover {
+                .fa-solid {
+                    color: $color-primary;
                 }
+                @include color-hover ($color-primary);
+            }
+    }
+        &__title {
+            margin-bottom: 1rem;
         }
 }
+
+.restaurant {
+    background-color: $main-background-color;
+    @include bloc;
+    h1 {
+        padding: 1.5rem 0;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.card {
+    height: 15.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+    margin-bottom: 1rem;
+    @include card-box-shadow;
+    &__img {
+        height: 11rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    &__badge {
+        background-color:$color-tertiary;
+        padding:0.5rem;
+        border-radius:0.125rem;
+        position:absolute;
+        top:1rem;
+        right:0.75rem;
+        @include color-darken($color-tertiary)
+    }
+    &__title {
+        color: black; 
+        padding: 0.5rem 1rem 0.25rem 1rem;
+    }  
+    &__subtitle {
+        color: black; 
+        padding: 0 1rem;
+    }          
+}
+
+footer {
+    background-color: $footer-color;
+}
+
+
