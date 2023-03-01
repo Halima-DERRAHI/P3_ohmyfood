@@ -146,7 +146,38 @@ body {
   color: black;
   padding: 0 1rem;
 }
+.card__favorite {
+  position: absolute;
+  right: 1.5rem;
+  top: 12.25rem;
+  font-size: 1.75rem;
+  color: rgb(65, 65, 65);
+}
 
-footer {
+.footer {
   background-color: #353535;
+  color: white;
+  padding: 0.5rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: 700;
+  margin: 1rem 0rem;
+}
+.footer__link p {
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+.footer__link--icon {
+  padding-right: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.fa-handshake {
+  transform: rotate(320deg);
+  padding-right: 0.125rem;
 }

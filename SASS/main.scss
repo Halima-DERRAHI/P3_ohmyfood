@@ -121,11 +121,43 @@ body {
     &__subtitle {
         color: black; 
         padding: 0 1rem;
-    }          
+    }   
+    &__favorite {
+        position:absolute;
+        right:1.5rem;
+        top:12.25rem;
+        font-size: 1.75rem;
+        color: rgb(65, 65, 65);
+    }       
 }
 
-footer {
+.footer {
     background-color: $footer-color;
+    color: white;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &__title {
+        font-family: "Shrikhand", cursive;
+        font-style: italic;
+        font-weight: 700;
+        margin: 1rem 0rem;
+    }
+    &__link {
+        p {
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        &--icon {
+            padding-right: 0.5rem;
+            font-size: 0.85rem;
+        }
+    }
 }
 
+.fa-handshake{
+    transform: rotate(320deg);
+    padding-right: 0.125rem;
+}
 
