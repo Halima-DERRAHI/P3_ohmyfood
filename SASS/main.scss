@@ -1,19 +1,21 @@
+@import "./utils/variables";
+@import "./Utils/mixins";
+@import "./Layout/header";
+@import "./Components/buttons";
+@import "./Layout/footer";
+
 *,
 *::after,
 *::before {
     margin: 0;
     box-sizing: inherit;
+    text-decoration: none;
 }
 
 body {
     box-sizing: border-box;
     font-family: Roboto,sans-serif;
 }
-
-@import "./utils/variables";
-@import "./Utils/mixins";
-@import "./Layout/header";
-@import "./Components/buttons";
 
 .place {
     background-color: #eaeaea;
@@ -50,6 +52,7 @@ body {
             margin: 0.75rem;
             margin-right: 0.25rem;
             border-radius: 1rem;
+            cursor: pointer;
             @include card-box-shadow;
             h4 {
                 font-weight: 500;
@@ -128,36 +131,14 @@ body {
         top:12.25rem;
         font-size: 1.75rem;
         color: rgb(65, 65, 65);
-    }       
-}
+        transform: scale(1.1);
+        &:hover {
 
-.footer {
-    background-color: $footer-color;
-    color: white;
-    padding: 0.5rem 2rem 1.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    &__title {
-        font-family: "Shrikhand", cursive;
-        font-style: italic;
-        font-weight: 700;
-        margin: 1rem 0rem;
-    }
-    &__link {
-        p {
-            padding-bottom: 0.5rem;
-            display: inline-block;
         }
-        &--icon {
-            padding-right: 0.5rem;
-            font-size: 0.85rem;
-        }
-    }
+    }       
 }
 
 .fa-handshake{
     transform: rotate(320deg);
     padding-right: 0.125rem;
 }
-

@@ -1,15 +1,3 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  box-sizing: inherit;
-}
-
-body {
-  box-sizing: border-box;
-  font-family: Roboto, sans-serif;
-}
-
 .header {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -28,6 +16,43 @@ body {
   padding: 0.9rem 1.5rem;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 0.5rem 2rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-weight: 700;
+  margin: 1rem 0rem;
+}
+.footer__link p {
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.footer__link--icon {
+  padding-right: 0.5rem;
+  font-size: 0.85rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 .place {
@@ -70,6 +95,7 @@ body {
   margin: 0.75rem;
   margin-right: 0.25rem;
   border-radius: 1rem;
+  cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
 .choice__list h4 {
@@ -152,31 +178,8 @@ body {
   top: 12.25rem;
   font-size: 1.75rem;
   color: rgb(65, 65, 65);
+  transform: scale(1.1);
 }
-
-.footer {
-  background-color: #353535;
-  color: white;
-  padding: 0.5rem 2rem 1.5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.footer__title {
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  font-weight: 700;
-  margin: 1rem 0rem;
-}
-.footer__link p {
-  padding-bottom: 0.5rem;
-  display: inline-block;
-}
-.footer__link--icon {
-  padding-right: 0.5rem;
-  font-size: 0.85rem;
-}
-
 .fa-handshake {
   transform: rotate(320deg);
   padding-right: 0.125rem;
