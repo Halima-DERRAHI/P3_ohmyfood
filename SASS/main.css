@@ -41,6 +41,10 @@
   padding-right: 0.5rem;
   font-size: 0.85rem;
 }
+.footer__link--hand {
+  transform: rotate(320deg);
+  padding-right: 0.125rem;
+}
 
 *,
 *::after,
@@ -88,8 +92,22 @@ body {
   flex-direction: column;
   margin: auto;
   padding: 3rem 1.25rem;
+  width: 100%;
 }
-.choice__list {
+.choice__title {
+  margin-bottom: 1rem;
+  margin-right: 70%;
+}
+.choice__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 3rem 1.25rem;
+  width: 100%;
+  padding: 0;
+}
+.choice__container--list {
   background-color: #f7f7f7;
   padding: 1.75rem;
   margin: 0.75rem;
@@ -98,17 +116,22 @@ body {
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
-.choice__list h4 {
+@media screen and (min-width: 768px) {
+  .choice__container--list {
+    width: 30%;
+  }
+}
+.choice__container--list h4 {
   font-weight: 500;
   display: inline-block;
 }
-.choice__list .fa-solid {
+.choice__container--list .fa-solid {
   color: #7e7e7e;
   display: inline-block;
   margin: 0 1rem;
   font-size: 1.15rem;
 }
-.choice__list--number {
+.choice__container--list--number {
   border-radius: 100%;
   background-color: #9356DC;
   color: white;
@@ -116,14 +139,17 @@ body {
   font-size: 0.85rem;
   margin-left: -2.5rem;
 }
-.choice__list:hover {
+.choice__container--list:hover {
   background-color: #f2eafb;
 }
-.choice__list:hover .fa-solid {
+.choice__container--list:hover .fa-solid {
   color: #9356DC;
 }
-.choice__title {
-  margin-bottom: 1rem;
+@media screen and (min-width: 768px) {
+  .choice__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .restaurant {
@@ -133,12 +159,26 @@ body {
   flex-direction: column;
   margin: auto;
   padding: 3rem 1.25rem;
+  width: 100%;
 }
 .restaurant h1 {
   padding: 1.5rem 0;
 }
 .restaurant a {
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .restaurant a {
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurant__card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
 }
 
 .card {
@@ -176,11 +216,16 @@ body {
   position: absolute;
   right: 1.5rem;
   top: 12.25rem;
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   color: rgb(65, 65, 65);
-  transform: scale(1.1);
 }
-.fa-handshake {
-  transform: rotate(320deg);
-  padding-right: 0.125rem;
+.card__favorite--solid {
+  background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+.card__favorite--solid:hover {
+  opacity: 100%;
 }
