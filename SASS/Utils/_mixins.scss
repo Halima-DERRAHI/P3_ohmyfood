@@ -6,6 +6,10 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
 
+@mixin card-box-shadow-hover {
+    box-shadow: rgba(139, 143, 149, 0.4) 0px 8px 24px;
+}
+
 @mixin color-hover($colour){
     $colour: lighten($colour, 35%);
     background-color: $colour;

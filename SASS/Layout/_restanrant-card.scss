@@ -1,0 +1,74 @@
+.restaurant {
+    background-color: $main-background-color;
+    @include bloc;
+    h1 {
+        padding: 1.5rem 0;
+    }
+    a {
+        text-decoration: none;
+        @media screen and (min-width: 768px) {
+            width: 45%;
+            margin-bottom: 2rem;
+        }
+    }
+    &__card {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+    }
+ 
+}
+
+.card {
+    height: 15.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+    margin-bottom: 1rem;
+    @include card-box-shadow;
+    &__img {
+        height: 11rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    &__badge {
+        background-color:$color-tertiary;
+        padding:0.5rem;
+        border-radius:0.125rem;
+        position:absolute;
+        top:1rem;
+        right:0.75rem;
+        @include color-darken($color-tertiary)
+    }
+    &__title {
+        color: black; 
+        padding: 0.5rem 1rem 0.25rem 1rem;
+    }  
+    &__subtitle {
+        color: black; 
+        padding: 0 1rem;
+    }   
+    &__favorite {
+        position:absolute;
+        right:1.5rem;
+        top:12.25rem;
+        font-size: 1.55rem;
+        color: rgb(65, 65, 65);
+        &--solid {
+            background: -webkit-linear-gradient(bottom,$color-secondary,$color-primary);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            opacity: 0;
+            transition: opacity 0.2s ease-in;
+            &:hover {
+                opacity: 100%;
+            } 
+        }
+    }
+    &:hover {
+        @include card-box-shadow-hover;
+    }      
+}

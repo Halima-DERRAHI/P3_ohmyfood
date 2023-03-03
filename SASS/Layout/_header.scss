@@ -4,6 +4,17 @@
     position: relative;
     display: flex;
     align-items: center;
+        &__arrow {
+            color: black;
+            font-size: 1.25rem;
+            padding: 0.5rem;
+            margin-left: 0.75rem;
+            &:hover {
+                border-radius: 100%;
+                cursor: pointer;
+                background-color: $main-background-color;
+            }
+        }
         &__logo{
             margin:auto;
         }

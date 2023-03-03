@@ -1,0 +1,51 @@
+.choice {
+    @include bloc;
+    &__title {
+        margin-bottom: 1rem;
+        margin-right: 70%;
+    }
+    &__container {
+        @include bloc;
+        padding: 0;
+        &--list {
+            background-color: $main-background-color;
+            padding: 1.75rem;
+            margin: 0.75rem;
+            margin-right: 0.25rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            @include card-box-shadow;
+            @media screen and (min-width: 768px) {
+                width: 30%;
+            }
+            h4 {
+                font-weight: 500;
+                display: inline-block;
+            }
+            .fa-solid {
+                color: $icon-color;
+                display: inline-block;
+                margin: 0 1rem;
+                font-size: 1.15rem;
+            }
+            &--number {
+                border-radius: 100%;
+                background-color: $color-primary;
+                color: white;
+                padding:0.25rem 0.5rem;
+                font-size: 0.85rem;
+                margin-left: -2.50rem;
+            }
+            &:hover {
+                .fa-solid {
+                    color: $color-primary;
+                }
+                @include color-hover ($color-primary);
+            }
+        }
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}

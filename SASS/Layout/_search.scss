@@ -1,0 +1,26 @@
+.place {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+        &__icon {
+            margin-right: 1rem;
+        }
+        &__text {
+            font-size: 1rem;
+        }
+}
+
+.explore {
+    background-color: $main-background-color;
+    text-align: center;
+    padding: 2rem 3rem 4rem 3rem;
+        &__title {
+            padding: 0.5rem;
+        }
+        &__text {
+            font-size: 1.15rem;
+            font-weight: 200;
+            margin:0.5rem 0 2.5rem 0;
+        }
+}

@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
