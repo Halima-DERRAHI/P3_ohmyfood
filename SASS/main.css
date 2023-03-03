@@ -48,7 +48,7 @@ body {
     opacity: 200%;
   }
   to {
-    opacity: 50%;
+    opacity: 70%;
     visibility: hidden;
   }
 }
