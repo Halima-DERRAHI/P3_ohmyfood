@@ -19,7 +19,7 @@ body {
   z-index: 20;
   inset: 0;
   position: fixed;
-  animation: 4s infinite;
+  animation: 2s infinite;
   animation: loaderout 2s forwards;
 }
 .loader .spinner {
@@ -48,7 +48,7 @@ body {
     opacity: 200%;
   }
   to {
-    opacity: 70%;
+    opacity: 80%;
     visibility: hidden;
   }
 }
