@@ -1,5 +1,6 @@
 .choice {
     @include bloc;
+    background-color: white;
     &__title {
         margin-bottom: 1rem;
         margin-right: 70%;
