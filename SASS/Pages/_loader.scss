@@ -7,7 +7,7 @@
     inset: 0;
     position: fixed;
     animation: 2s infinite;
-    animation: loaderout 2s forwards;
+    animation: loaderout 1.5s forwards;
     .spinner {
         border-top: 10px solid $color-primary ;
         border-bottom: 10px solid $color-secondary;
@@ -32,7 +32,7 @@
 }
 @keyframes loaderout {
     from {
-    opacity: 200%;
+    opacity: 100%;
     }
     to {
     opacity: 80%;

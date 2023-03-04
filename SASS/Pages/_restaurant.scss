@@ -9,8 +9,8 @@
 
 .menu {
     background-color: $main-background-color;
-    border-radius: 3rem 3rem 0 0;
-    margin-top: -2rem;
+    border-radius: 2.75rem 2.75rem 0 0;
+    margin-top: -2.75rem;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -23,19 +23,28 @@
         font-size: 1.125rem;
         font-style: italic;
         padding: 2rem 0;
+        text-align: center;
         &--heart {
             right: -0.75rem;
             top: -12rem;
             position: relative;
+        }
+        @media screen and (min-width: 768px) {
+            width: 31%;
         }
     }
     &__type {
         width: 94%;
         padding-bottom: 1.75rem;
         margin:auto;
+        animation: menu 2 forwards;
+        overflow: hidden;
+        @media screen and (min-width: 768px) {
+            width: 30%;
+        }
         &--title {
             font-weight: 300;
-            padding-bottom: 0.25rem;  
+            padding-bottom: 0.25rem;
         }
         &--line {
             width: 2.42rem;
@@ -47,16 +56,23 @@
             height: 4.25rem;
             padding: 0.75rem;
             display: flex;
+            cursor: pointer;
             justify-content: space-between;
         }
         &--description {
             font-weight: 200;
+            white-space: nowrap;
+            overflow: hidden;
             h3 {
                 padding-bottom: 0.25rem;
                 font-weight: 500;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             p{
                 font-size: 0.95rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
         span {
@@ -67,12 +83,17 @@
     }
     &__button {
         text-align: center;
-        padding: 1rem 1rem 3rem 1rem;
+        padding: 1rem 1rem 4rem 1rem;
         a{
             padding: 1rem 2.75rem;
         }
     }
-    @media screen and (min-width: 768px) {
-        
+    &__bloc {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
     }
 }
