@@ -331,33 +331,66 @@ body {
   background-color: #99E2D0;
   margin-bottom: 0.75rem;
 }
-.menu__type--card {
-  height: 4.25rem;
-  padding: 0.75rem;
+.menu__card {
   display: flex;
+  height: 4.25rem;
   cursor: pointer;
-  justify-content: space-between;
+  overflow: hidden;
 }
-.menu__type--description {
+.menu__card--info {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+}
+.menu__card--description {
   font-weight: 200;
   white-space: nowrap;
   overflow: hidden;
+  padding: 0.75rem;
 }
-.menu__type--description h3 {
+.menu__card--description h3 {
   padding-bottom: 0.25rem;
-  font-weight: 500;
+  font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__type--description p {
+.menu__card--description p {
   font-size: 0.95rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__type span {
-  padding: 1.5rem 0.75rem 0 1rem;
+.menu__card span {
+  padding: 2rem 0.75rem 1rem;
   font-size: 1rem;
   font-weight: 500;
+}
+.menu__card .check__slide {
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  background: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__card .check__slide .check__cercle {
+  background-color: white;
+  color: #99E2D0;
+  border-radius: 50%;
+  padding: 0.2rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  font-size: 1.25rem;
+}
+.menu__card:hover .check__slide {
+  width: 4.5rem;
+  opacity: 1;
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.menu__card:hover .check__cercle {
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
 }
 .menu__button {
   text-align: center;

@@ -61,20 +61,26 @@
             background-color: $color-tertiary;
             margin-bottom: 0.75rem; 
         }
-        &--card {
-            height: 4.25rem;
-            padding: 0.75rem;
+    }
+    &__card {
+        display: flex;
+        height: 4.25rem;
+        cursor: pointer;
+        overflow: hidden;
+        &--info {
             display: flex;
-            cursor: pointer;
             justify-content: space-between;
+            overflow: hidden;
+            width: 100%;
         }
         &--description {
             font-weight: 200;
             white-space: nowrap;
             overflow: hidden;
+            padding: 0.75rem;
             h3 {
                 padding-bottom: 0.25rem;
-                font-weight: 500;
+                font-weight: 400;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
@@ -85,9 +91,40 @@
             }
         }
         span {
-            padding:1.5rem 0.75rem 0 1rem;
+            padding:2rem 0.75rem 1rem;
             font-size: 1rem;
             font-weight: 500;
+        }
+        .check__slide {
+            width: 0;
+            height: 100%;
+            opacity: 0;
+            background: $color-tertiary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .check__cercle {
+                background-color: white;
+                color: $color-tertiary;
+                border-radius: 50%;
+                padding: 0.2rem;
+                height: 1.75rem;
+                width: 1.75rem;
+                font-size: 1.25rem;
+            }
+        }
+        &:hover {
+            .check__slide {
+                width: 4.5rem;
+                opacity: 1;
+                transition: transform 0.5s ease-in-out,
+                            width 0.5s ease-in-out,
+                            opacity 0.5s ease-in-out;
+            }
+            .check__cercle {
+                transform: rotate(360deg);
+                transition: 0.4s ease-in-out;
+            }
         }
     }
     &__button {
@@ -98,3 +135,5 @@
         }
     }
 }
+
+
