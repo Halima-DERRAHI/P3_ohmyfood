@@ -223,7 +223,8 @@ body {
   height: 11rem;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card__badge {
   background-color: #99E2D0;
@@ -267,7 +268,8 @@ body {
 .header_image img {
   height: 15rem;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
@@ -304,6 +306,11 @@ body {
   position: relative;
 }
 @media screen and (min-width: 768px) {
+  .menu__title {
+    width: 23%;
+  }
+}
+@media screen and (min-width: 768px) {
   .menu__bloc {
     display: flex;
     flex-direction: row;
@@ -331,6 +338,14 @@ body {
   background-color: #99E2D0;
   margin-bottom: 0.75rem;
 }
+.menu__button {
+  text-align: center;
+  padding: 1rem 1rem 4rem 1rem;
+}
+.menu__button a {
+  padding: 1rem 2.75rem;
+}
+
 .menu__card {
   display: flex;
   height: 4.25rem;
@@ -392,13 +407,6 @@ body {
   transform: rotate(360deg);
   transition: 0.4s ease-in-out;
 }
-.menu__button {
-  text-align: center;
-  padding: 1rem 1rem 4rem 1rem;
-}
-.menu__button a {
-  padding: 1rem 2.75rem;
-}
 
 .footer {
   background-color: #353535;
@@ -426,4 +434,4 @@ body {
 .footer__link--hand {
   transform: rotate(320deg);
   padding-right: 0.125rem;
-}
+}/*# sourceMappingURL=main.css.map */
