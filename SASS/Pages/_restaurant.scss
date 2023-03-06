@@ -4,9 +4,6 @@
         width: 100%;
         object-fit: cover;
         z-index: 1;
-        @media screen and (min-width: 768px) {
-            height: 25rem;
-        }
     }
 }
 
@@ -37,6 +34,7 @@
         }
         @media screen and (min-width: 768px)  {
             width: 23%;
+            min-width: 19rem;
         }
     }
     &__bloc {
@@ -52,7 +50,7 @@
         animation: menu 2 forwards;
         overflow: hidden;
         @media screen and (min-width: 768px) {
-            width: 33%;
+            min-width: 33%;
         }
         &--title {
             font-weight: 300;
@@ -74,11 +72,25 @@
     }
 }
 
+@keyframes menu {
+    from {
+        transform: translateY(2rem);
+        opacity: 0;
+        }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 .menu__card {
     display: flex;
     height: 4.25rem;
     cursor: pointer;
     overflow: hidden;
+    position: relative;
+    animation: menu 0.5s ease-in forwards;
+    opacity: 0;
     &--info {
         display: flex;
         justify-content: space-between;
@@ -138,6 +150,12 @@
             transition: 0.4s ease-in-out;
         }
     }
+    @include delay;
 }
 
 
+
+
+
+
+  
