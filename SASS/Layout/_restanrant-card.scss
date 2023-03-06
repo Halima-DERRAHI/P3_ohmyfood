@@ -1,7 +1,7 @@
 .restaurant {
     background-color: $main-background-color;
     @include bloc;
-    h1 {
+    &__title {
         padding: 1.5rem 0;
     }
     a {

@@ -20,8 +20,7 @@
     &__title {
         width: 90%;
         margin:auto;
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
         font-family: "Shrikhand", cursive;
         font-size: 1.125rem;
         font-style: italic;
@@ -92,8 +91,7 @@
     animation: menu 0.5s ease-in forwards;
     opacity: 0;
     &--info {
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
         overflow: hidden;
         width: 100%;
     }
@@ -124,9 +122,8 @@
         height: 100%;
         opacity: 0;
         background: $color-tertiary;
-        display: flex;
-        justify-content: center;
         align-items: center;
+        @include flex-center;
         .check__cercle {
             background-color: white;
             color: $color-tertiary;

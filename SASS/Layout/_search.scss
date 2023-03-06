@@ -1,7 +1,6 @@
 .place {
     background-color: #eaeaea;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     padding: 1rem;
         &__icon {
             margin-right: 1rem;

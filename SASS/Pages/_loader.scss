@@ -1,6 +1,5 @@
 .loader {
-    display: flex;
-    justify-items: center;
+    @include flex-center;
     align-items: center;
     background: white;
     z-index: 20;
