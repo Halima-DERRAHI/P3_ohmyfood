@@ -31,16 +31,16 @@
             top: -12rem;
             position: relative;
         }
-        @media screen and (min-width: 768px)  {
+        @media screen and (min-width: 1025px)  {
             width: 23%;
             min-width: 19rem;
         }
     }
     &__bloc {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1025px) {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
     }
@@ -48,18 +48,22 @@
         padding: 0.75rem 1rem 1.75rem 1rem;
         animation: menu 2 forwards;
         overflow: hidden;
-        @media screen and (min-width: 768px) {
-            min-width: 33%;
-        }
         &--title {
             font-weight: 300;
-            padding-bottom: 0.25rem;
+            padding-bottom: 1.5rem;
         }
-        &--line {
+        &::after {
+            content: " ";
             width: 2.42rem;
             height: 0.18rem;
+            position: absolute;
             background-color: $color-tertiary;
-            margin-bottom: 0.75rem; 
+            margin-bottom: 1rem; 
+            top: 2.25rem;
+            bottom: 0;
+        }
+        @media screen and (min-width: 1025px) {
+            width: 33%;
         }
     }
     &__button {

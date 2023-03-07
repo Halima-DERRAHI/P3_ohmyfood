@@ -6,13 +6,13 @@
     }
     a {
         text-decoration: none;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1025px) {
             width: 45%;
             margin-bottom: 2rem;
         }
     }
     &__card {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1025px) {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-evenly;

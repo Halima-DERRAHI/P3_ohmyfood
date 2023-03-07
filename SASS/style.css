@@ -148,7 +148,7 @@ body {
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .choice__container--list {
     width: 30%;
   }
@@ -177,7 +177,7 @@ body {
 .choice__container--list:hover .fa-solid {
   color: #9356DC;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .choice__container {
     flex-direction: row;
     justify-content: space-around;
@@ -199,13 +199,13 @@ body {
 .restaurant a {
   text-decoration: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .restaurant a {
     width: 45%;
     margin-bottom: 2rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .restaurant__card {
     display: flex;
     flex-flow: row wrap;
@@ -300,17 +300,17 @@ body {
   top: -12rem;
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .menu__title {
     width: 23%;
     min-width: 19rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .menu__bloc {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -319,20 +319,24 @@ body {
   animation: menu 2 forwards;
   overflow: hidden;
 }
-@media screen and (min-width: 768px) {
-  .menu__type {
-    min-width: 33%;
-  }
-}
 .menu__type--title {
   font-weight: 300;
-  padding-bottom: 0.25rem;
+  padding-bottom: 1.5rem;
 }
-.menu__type--line {
+.menu__type::after {
+  content: " ";
   width: 2.42rem;
   height: 0.18rem;
+  position: absolute;
   background-color: #99E2D0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  top: 2.25rem;
+  bottom: 0;
+}
+@media screen and (min-width: 1025px) {
+  .menu__type {
+    width: 33%;
+  }
 }
 .menu__button {
   text-align: center;
@@ -456,5 +460,3 @@ body {
   transform: rotate(320deg);
   padding-right: 0.125rem;
 }
-
-/*# sourceMappingURL=style.css.map */
