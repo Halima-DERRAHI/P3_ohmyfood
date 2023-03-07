@@ -12,31 +12,60 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/*.loader {
+    @include flex-center;
+    align-items: center;
+    background: white;
+    z-index: 20;
+    inset: 0;
+    position: fixed;
+    animation: 2s infinite;
+    animation: loader 1.5s forwards;
+    .spinner {
+        border-top: 10px solid $color-primary ;
+        border-bottom: 10px solid $color-secondary;
+        border-left: 2px solid $color-tertiary;
+        border-right: 2px solid $color-tertiary;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: relative;
+        animation: spinner 1s linear infinite;
+    }
+}*/
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
   background: white;
-  z-index: 20;
+  z-index: 10;
   inset: 0;
   position: fixed;
-  animation: 2s infinite;
-  animation: loaderout 1.5s forwards;
+  animation: loader 3.5s forwards;
 }
-.loader .spinner {
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
-  border-left: 2px solid #99E2D0;
-  border-right: 2px solid #99E2D0;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin: auto;
+.loader .circle {
   position: relative;
-  animation: spin 1s linear infinite;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spinner 1s linear infinite;
+}
+.loader .circle__inner {
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 30;
 }
 
-@keyframes spin {
+@keyframes spinner {
   0% {
     transform: rotate 0deg;
   }
@@ -44,12 +73,12 @@ body {
     transform: rotate(360deg);
   }
 }
-@keyframes loaderout {
+@keyframes loader {
   from {
     opacity: 100%;
   }
   to {
-    opacity: 80%;
+    opacity: 90%;
     visibility: hidden;
   }
 }
