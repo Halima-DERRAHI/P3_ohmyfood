@@ -1,26 +1,3 @@
-/*.loader {
-    @include flex-center;
-    align-items: center;
-    background: white;
-    z-index: 20;
-    inset: 0;
-    position: fixed;
-    animation: 2s infinite;
-    animation: loader 1.5s forwards;
-    .spinner {
-        border-top: 10px solid $color-primary ;
-        border-bottom: 10px solid $color-secondary;
-        border-left: 2px solid $color-tertiary;
-        border-right: 2px solid $color-tertiary;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        margin: auto;
-        position: relative;
-        animation: spinner 1s linear infinite;
-    }
-}*/
-
 .loader {
     @include flex-center;
     align-items: center;
