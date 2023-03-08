@@ -128,6 +128,9 @@
         background: $color-tertiary;
         align-items: center;
         @include flex-center;
+        transition: transform 0.5s ease-in-out,
+                        width 0.5s ease-in-out,
+                        opacity 0.5s ease-in-out;
         .check__cercle {
             background-color: white;
             color: $color-tertiary;
@@ -136,6 +139,8 @@
             height: 1.75rem;
             width: 1.75rem;
             font-size: 1.25rem;
+            transform: rotate(0deg);
+            transition: 0.4s ease-in-out;
         }
     }
     &:hover {
@@ -151,12 +156,21 @@
             transition: 0.4s ease-in-out;
         }
     }
-    @include delay;
 }
 
+#entree {
+    .menu__card {
+        @include delay-entree;
+    }
+}
+#plat {
+    .menu__card {
+        @include delay-plat;
+    }
+}
+#dessert {
+    .menu__card {
+        @include delay-dessert;
+    }
+}
 
-
-
-
-
-  

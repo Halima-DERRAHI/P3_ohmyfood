@@ -12,28 +12,6 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-/*.loader {
-    @include flex-center;
-    align-items: center;
-    background: white;
-    z-index: 20;
-    inset: 0;
-    position: fixed;
-    animation: 2s infinite;
-    animation: loader 1.5s forwards;
-    .spinner {
-        border-top: 10px solid $color-primary ;
-        border-bottom: 10px solid $color-secondary;
-        border-left: 2px solid $color-tertiary;
-        border-right: 2px solid $color-tertiary;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        margin: auto;
-        position: relative;
-        animation: spinner 1s linear infinite;
-    }
-}*/
 .loader {
   display: flex;
   justify-content: center;
@@ -430,6 +408,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .menu__card .check__slide .check__cercle {
   background-color: white;
@@ -439,6 +418,8 @@ body {
   height: 1.75rem;
   width: 1.75rem;
   font-size: 1.25rem;
+  transform: rotate(0deg);
+  transition: 0.4s ease-in-out;
 }
 .menu__card:hover .check__slide {
   width: 4.5rem;
@@ -449,17 +430,44 @@ body {
   transform: rotate(360deg);
   transition: 0.4s ease-in-out;
 }
-.menu__card:nth-child(1) {
+
+#entree .menu__card:nth-child(1) {
   animation-delay: 0.25s;
 }
-.menu__card:nth-child(2) {
+#entree .menu__card:nth-child(2) {
   animation-delay: 0.5s;
 }
-.menu__card:nth-child(3) {
+#entree .menu__card:nth-child(3) {
   animation-delay: 0.75s;
 }
-.menu__card:nth-child(4) {
+#entree .menu__card:nth-child(4) {
   animation-delay: 1s;
+}
+
+#plat .menu__card:nth-child(1) {
+  animation-delay: 1.25s;
+}
+#plat .menu__card:nth-child(2) {
+  animation-delay: 1.5s;
+}
+#plat .menu__card:nth-child(3) {
+  animation-delay: 1.75s;
+}
+#plat .menu__card:nth-child(4) {
+  animation-delay: 2s;
+}
+
+#dessert .menu__card:nth-child(1) {
+  animation-delay: 2.25s;
+}
+#dessert .menu__card:nth-child(2) {
+  animation-delay: 2.5s;
+}
+#dessert .menu__card:nth-child(3) {
+  animation-delay: 2.75s;
+}
+#dessert .menu__card:nth-child(4) {
+  animation-delay: 3s;
 }
 
 .footer {
