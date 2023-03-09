@@ -16,7 +16,7 @@
             border-radius: 1rem;
             cursor: pointer;
             @include card-box-shadow;
-            @media screen and (min-width: 1025px) {
+            @media screen and (min-width: 768px) {
                 width: 30%;
             }
             h4 {
@@ -44,7 +44,7 @@
                 @include color-hover ($color-primary);
             }
         }
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 768px) {
             flex-direction: row;
             justify-content: space-around;
         }

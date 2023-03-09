@@ -6,7 +6,7 @@
     inset: 0;
     position: fixed;
     animation: loader 3.5s forwards;
-        .circle {
+    .circle {
         position: relative;
         width: 155px; height: 155px;
         border-radius: 50%;
@@ -15,12 +15,12 @@
         @include flex-center;
         align-items: center;
         animation: spinner 1s linear infinite;
-        &__inner {
-            position: absolute;
-            width: 135px; height: 135px;
-            border-radius: 50%;
-            background-color: white;
-            z-index: 30;
+    &__inner {
+        position: absolute;
+        width: 135px; height: 135px;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 30;
         }
     }
 }
