@@ -44,11 +44,11 @@
 }
 @mixin delay-plat {
     @for $i from 1 to 5 {
-        &:nth-child(#{$i}) { animation-delay: $i * 0.25s +1; }
+        &:nth-child(#{$i}) { animation-delay: $i * 0.25s + 1; }
       }
 }
 @mixin delay-dessert {
     @for $i from 1 to 5 {
-        &:nth-child(#{$i}) { animation-delay: $i * 0.25s +2; }
+        &:nth-child(#{$i}) { animation-delay: $i * 0.25s + 2; }
       }
 }
