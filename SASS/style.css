@@ -158,11 +158,6 @@ body {
   cursor: pointer;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
 }
-@media screen and (min-width: 768px) {
-  .choice__container--list {
-    width: 30%;
-  }
-}
 .choice__container--list h4 {
   font-weight: 500;
   display: inline-block;
@@ -188,9 +183,40 @@ body {
   color: #9356DC;
 }
 @media screen and (min-width: 768px) {
+  .choice__container--list {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .choice__container--list {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .choice__container {
+    flex-direction: column;
+  }
+  .choice__container #choice1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .choice__container #choice2 {
+    display: flex;
+    justify-content: center;
+  }
+  .choice__container #choice3 {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 992px) {
   .choice__container {
     flex-direction: row;
     justify-content: space-around;
+  }
+  .choice__container #choice1, .choice__container #choice2, .choice__container #choice3 {
+    display: block;
+    width: 30%;
   }
 }
 
@@ -345,7 +371,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .menu__type {
-    width: 33%;
+    min-width: 33%;
   }
 }
 .menu__button {
