@@ -18,6 +18,7 @@
     margin-right: auto;
     margin-left: auto;
     display: block;
+
     &__title {
         width: 90%;
         margin:auto;
@@ -27,6 +28,7 @@
         font-style: italic;
         padding: 2rem 0;
         text-align: center;
+
         &--heart {
             right: -0.75rem;
             top: -12rem;
@@ -52,6 +54,7 @@
         padding: 0.75rem 1rem 1.75rem 1rem;
         animation: menu 2 forwards;
         overflow: hidden;
+
         &--title {
             font-weight: 300;
             padding-bottom: 1.5rem;
@@ -95,6 +98,7 @@
     position: relative;
     animation: menu 0.5s ease-in forwards;
     opacity: 0;
+
     &--info {
         @include flex-between;
         overflow: hidden;
@@ -130,6 +134,7 @@
         align-items: center;
         @include flex-center;
         transition: all 0.5s ease-in-out;
+        
         .check__cercle {
             background-color: white;
             color: $color-tertiary;

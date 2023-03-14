@@ -1,6 +1,7 @@
 .choice {
     @include bloc;
     background-color: white;
+
     &__title {
         margin-bottom: 1rem;
         margin-right: 70%;
@@ -8,6 +9,7 @@
     &__container {
         @include bloc;
         padding: 0;
+
         &--list {
             background-color: $main-background-color;
             padding: 1.75rem;
@@ -16,6 +18,7 @@
             border-radius: 1rem;
             cursor: pointer;
             @include card-box-shadow;
+
             h4 {
                 font-weight: 500;
                 display: inline-block;
@@ -35,6 +38,7 @@
                 margin-left: -2.50rem;
             }
             &:hover {
+                
                 .fa-solid {
                     color: $color-primary;
                 }
@@ -65,6 +69,7 @@
         @media screen and (min-width: 992px) {
             flex-direction: row;
             justify-content: space-around;
+
             #choice1, #choice2, #choice3 {
                 display: block;
                 width: 30%;

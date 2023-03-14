@@ -4,6 +4,7 @@
     padding: 0.5rem 2rem 1.5rem 2rem;
     display: flex;
     flex-direction: column;
+
     &__title {
         font-family: "Shrikhand", cursive;
         font-style: italic;
@@ -11,6 +12,7 @@
         margin: 1rem 0rem;
     }
     &__link {
+        
         p {
             padding-bottom: 0.5rem;
             display: inline-block;

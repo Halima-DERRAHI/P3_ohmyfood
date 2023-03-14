@@ -5,12 +5,14 @@
     position: relative;
     align-items: center;
     @include flex-center;
+
     &__arrow {
         color: black;
         font-size: 1.25rem;
         padding: 0.5rem;
         margin-left: 0.75rem;
         margin-right: -4rem;
+        
         &:hover {
             border-radius: 100%;
             cursor: pointer;
