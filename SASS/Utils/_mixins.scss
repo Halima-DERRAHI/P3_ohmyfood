@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 @mixin btn-box-shadow {
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
 }
@@ -46,11 +47,11 @@
 @mixin delay-plat {
     @for $i from 1 to 5 {
         &:nth-child(#{$i}) { animation-delay: $i * 0.25s + 1; }
-      }
+    }
 }
 
 @mixin delay-dessert {
     @for $i from 1 to 5 {
         &:nth-child(#{$i}) { animation-delay: $i * 0.25s + 2; }
-      }
+    }
 }

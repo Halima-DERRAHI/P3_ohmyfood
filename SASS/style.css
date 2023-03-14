@@ -319,6 +319,7 @@ body {
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
+  display: block;
 }
 .menu__title {
   width: 90%;
@@ -344,10 +345,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .menu__bloc {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu__bloc {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 .menu__type {
@@ -368,11 +373,6 @@ body {
   margin-bottom: 1rem;
   top: 2.25rem;
   bottom: 0;
-}
-@media screen and (min-width: 768px) {
-  .menu__type {
-    min-width: 33%;
-  }
 }
 .menu__button {
   text-align: center;
@@ -437,7 +437,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu__card .check__slide .check__cercle {
   background-color: white;
@@ -453,7 +453,7 @@ body {
 .menu__card:hover .check__slide {
   width: 4.5rem;
   opacity: 1;
-  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .menu__card:hover .check__cercle {
   transform: rotate(360deg);

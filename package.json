@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./SASS/style.scss:./SASS/style.css",
-    "prefix": "postcss ./SASS/main.css --use autoprefixer -d ./SASS/prefixed/"
+    "prefix": "postcss ./SASS/style.css --use autoprefixer -d ./SASS/prefixed/"
   },
   "repository": {
     "type": "git",
