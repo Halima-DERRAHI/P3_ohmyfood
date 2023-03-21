@@ -333,9 +333,14 @@ body {
   text-align: center;
 }
 .menu__title--heart {
-  right: -1.75rem;
+  right: -0.75rem;
   top: -12rem;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .menu__title--heart {
+    right: -1.75rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__title {
