@@ -124,7 +124,7 @@ body {
   cursor: pointer;
 }
 .main_button:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.15);
   box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
 }
 
