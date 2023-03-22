@@ -12,11 +12,12 @@
         margin: 1rem 0rem;
     }
     &__link {
-        
+        a {
+            color: white;
+        }
         p {
             padding-bottom: 0.5rem;
             display: inline-block;
-            cursor: pointer;
         }
         &--icon {
             padding-right: 0.5rem;

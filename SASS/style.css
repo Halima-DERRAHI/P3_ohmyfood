@@ -517,10 +517,12 @@ body {
   font-weight: 700;
   margin: 1rem 0rem;
 }
+.footer__link a {
+  color: white;
+}
 .footer__link p {
   padding-bottom: 0.5rem;
   display: inline-block;
-  cursor: pointer;
 }
 .footer__link--icon {
   padding-right: 0.5rem;
