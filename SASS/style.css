@@ -23,7 +23,7 @@ body {
   z-index: 10;
   inset: 0;
   position: fixed;
-  animation: loader 3.5s forwards;
+  animation: loader 3s forwards;
 }
 .loader .circle {
   position: relative;
